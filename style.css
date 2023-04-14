@@ -15,7 +15,7 @@ main{
 }
 .container{
     background-color: #fff;
-    width: 870px;
+    width:870px;
     padding:30px;
     border-radius: 5px;
     margin-top: 50px;
@@ -126,7 +126,7 @@ header {
     text-decoration: none;
     color: #562EFF;
 }
-/* ------------------------course section Style---------------------*/
+/* ------------course section Style---------------------*/
 .all-courses{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -175,4 +175,46 @@ header {
     background-color: #FFE4E8;
     padding: 3px;
     border-radius: 15px;
+}
+/* Media quary small device */
+@media screen and (max-width:576px){
+    .container{
+    
+        width:100%;
+        margin-left: 15px;
+    }
+    .players{
+       
+        grid-template-columns: repeat(2,1fr);
+       
+        
+    }
+    .player {
+     flex-direction: column;
+    }
+    .blogs{
+        
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+
+    }
+    .course-thumbnel img{
+        width: 10%;
+    }
+    .all-courses{
+        
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    
+    }
+    .courses{
+       margin-bottom: 40px;
+        width:100%;
+       
+        
+    }
+    .course-thumbnel img{
+        height:30%;
+        width:100%;
+    }
 }
