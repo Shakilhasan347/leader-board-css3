@@ -5,19 +5,68 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+    margin: 0px;
 }
 main{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .container{
     background-color: #fff;
     width: 870px;
     padding:30px;
+    border-radius: 5px;
+    margin-top: 50px;
 }
 hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 27px;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    background-color: #562EFF;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    width:1000px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+   align-items: center;
+   gap:10px;
+   padding:10px;
+}
+.logo img{
+    width:50px;
+    height:50px;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+}
+.nav ul {
+    list-style: none;
+}
+.nav ul li{
+    padding: 10px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav ul li img{
+    height:30px;
+    width: 30px;
 }
 /* top players style */
 .top-players{
@@ -76,4 +125,54 @@ hr{
 .blog-author a{
     text-decoration: none;
     color: #562EFF;
+}
+/* ------------------------course section Style---------------------*/
+.all-courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.courses{
+    box-shadow: 1px 1px 15px rgb(214, 208, 208);
+    width: 250px;
+    border-radius: 10px;
+}
+.course-thumbnel img{
+    width: 250px;
+    height: 104px;
+}
+.course-details{
+    padding-left: 10px ;
+    padding-top: 10px;
+}
+.course-details h3,p{
+    margin:5px;
+}
+.course-title{
+    font-size: 20px;
+}
+.course-info{
+    display: flex;
+    gap: 10px;
+}
+.course-author {
+    font-size: 12px;
+    color: #ED6B4F;
+}
+.ratting{
+    color:#FFC014
+
+}
+.ratting span{
+    color: #9F9F9F;
+}
+.rate{
+    color:#9F9F9F ;
+    font-size: 14px;
+}
+.course-time{
+    font-size: 12px;
+    color:  #FF4A60;
+    background-color: #FFE4E8;
+    padding: 3px;
+    border-radius: 15px;
 }
